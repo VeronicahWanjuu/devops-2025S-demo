@@ -1,5 +1,6 @@
 # This is the "blueprint" for our container registry
 resource "aws_ecr_repository" "devops_repo" {
+  #checkov:skip=CKV_AWS_136:Course demo repo with no sensitive data. Default AES256 encryption is enough. Owner Vero, revisit before any production use.
   # The name for your repository
   name = "devops-repo"
 
